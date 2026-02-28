@@ -1,0 +1,97 @@
+# Enhanced Motion Planning Prompts - Learning from Motion-Agent
+# This file contains examples of how to structure motion planning requests
+
+## Basic Navigation Tasks
+
+### Example 1: Simple Movement
+**User Input**: "Walk to the yellow chair"
+**Expected Response**:
+{
+  "plan": "1. A person turns to the right; 2. A person walks forward 3 meters",
+  "reasoning": "The person needs to turn towards the chair and walk the appropriate distance to reach it."
+}
+
+### Example 2: Complex Navigation
+**User Input**: "Go from the bed to the kitchen, avoiding the table in the middle"
+**Expected Response**:
+{
+  "plan": "1. A person gets up from bed; 2. A person turns to the left; 3. A person walks forward 2 meters; 4. A person turns to the right; 5. A person walks forward 4 meters; 6. A person turns to the left; 7. A person walks forward 3 meters",
+  "reasoning": "The person needs to navigate around the table by making strategic turns and walking segments to reach the kitchen."
+}
+
+### Example 3: Multi-Step Task
+**User Input**: "Pick up the book from the shelf, then sit on the sofa to read"
+**Expected Response**:
+{
+  "plan": "1. A person walks to the bookshelf; 2. A person reaches up to grab the book; 3. A person turns around; 4. A person walks to the sofa; 5. A person sits down on the sofa; 6. A person opens the book to read",
+  "reasoning": "This is a multi-location task requiring navigation, reaching, and sitting actions in sequence."
+}
+
+## Advanced Navigation Patterns
+
+### Example 4: Obstacle Avoidance
+**User Input**: "Navigate through the crowded living room to reach the balcony"
+**Expected Response**:
+{
+  "plan": "1. A person turns to the right; 2. A person walks forward 1 meter; 3. A person turns to the left; 4. A person walks forward 2 meters; 5. A person turns to the right; 6. A person walks forward 1.5 meters; 7. A person turns to the left; 8. A person walks forward 2 meters",
+  "reasoning": "The person needs to make multiple small turns and short walks to navigate around furniture and obstacles in the crowded space."
+}
+
+### Example 5: Precision Movement
+**User Input**: "Approach the window and look outside"
+**Expected Response**:
+{
+  "plan": "1. A person turns to face the window; 2. A person walks forward 2.5 meters; 3. A person stops at the window; 4. A person leans forward slightly to look outside",
+  "reasoning": "Precise navigation to the window followed by a subtle leaning motion to look outside."
+}
+
+## Response Format Guidelines
+
+### Required JSON Structure:
+```json
+{
+  "plan": "1. A person [action]; 2. A person [action]; 3. A person [action]",
+  "reasoning": "Brief explanation of the motion sequence logic"
+}
+```
+
+### Action Description Rules:
+1. **Always start with "A person"** - This ensures consistency and clarity
+2. **Use specific action verbs**: walk, turn, reach, sit, stand, bend, etc.
+3. **Include spatial information**: forward, backward, left, right, up, down
+4. **Specify distances when relevant**: "walks forward 3 meters"
+5. **Keep each action atomic**: One action per step, avoid complex compound actions
+
+### Common Action Patterns:
+- **Movement**: "A person walks forward 2 meters"
+- **Turning**: "A person turns to the left", "A person turns 90 degrees"
+- **Reaching**: "A person reaches up to grab the item"
+- **Sitting/Standing**: "A person sits down on the chair"
+- **Bending**: "A person bends down to pick up the object"
+
+### Quality Guidelines:
+1. **Logical sequence**: Actions should follow a logical order
+2. **Spatial consistency**: Consider the physical layout and constraints
+3. **Efficiency**: Minimize unnecessary movements
+4. **Safety**: Avoid unrealistic or dangerous actions
+5. **Completeness**: Ensure the sequence accomplishes the full task
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
