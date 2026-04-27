@@ -4,9 +4,9 @@ This is the official repository for the paper:
 
 > **InteractAgent: Agentic Human Motion Interaction with Memory-Augmented LLMs**
 >
-> Tao Zhang\*, Senhe Zhang\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/)\*†, Yujia Zhang, Dong Gong‡
+> Tao Zhang\*, Senhe Zhang\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/), Yujia Zhang, Dong Gong†
 >
-> \*Equal contribution. †Project lead. ‡Corresponding author.
+> \*Equal contribution. †Corresponding author.
 >
 > ### [Paper](paper.pdf)
 
