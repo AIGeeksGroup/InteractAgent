@@ -1,8 +1,8 @@
-# InteractAgent: Agentic Human Motion Interaction with Memory-Augmented LLMs
+# InteractAgent: Agentic Human Motion Interaction with Memory-Augmented Reflection
 
 This is the official repository for the paper:
 
-> **InteractAgent: Agentic Human Motion Interaction with Memory-Augmented LLMs**
+> **InteractAgent: Agentic Human Motion Interaction with Memory-Augmented Reflection**
 >
 > [Tao Zhang](https://github.com/zhangtao22)\*, [Senhe Zhang](https://www.linkedin.com/in/senhe-zhang-9b2b52324/)\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/)\*, [Yujia Zhang](https://www.linkedin.com/in/yujia-zhang-phd/), [Dong Gong](https://donggong1.github.io/)#
 > 
