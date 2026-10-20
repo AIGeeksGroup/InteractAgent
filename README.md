@@ -10,7 +10,7 @@ This is the official repository for the paper:
 >
 > ***WACV 2027***
 >
-> ### [Paper](paper.pdf)
+> ### [Paper](https://arxiv.org/abs/2610.25649)
 
 
 
